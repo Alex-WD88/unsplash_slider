@@ -1,0 +1,24 @@
+
+<!-- Slider main container -->
+<div class="swiper mySwiper2">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    {% for photo in photos %}
+        <div class="swiper-slide"><img src="{{ photo.urls.full }}" alt="Photo"></div>
+    {% endfor %}
+  </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Slider main container -->
+<div class="swiper mySwiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    {% for photo in photos %}
+        <div class="swiper-slide"><img src="{{ photo.urls.full }}" alt="Photo"></div>
+    {% endfor %}
+  </div>
+</div>
